@@ -1,0 +1,23 @@
+{
+  "name": "Azure PIM Authorization Header Extractor",
+  "description": "Extracts Azure PIM authorization header from requests",
+  "version": "1.0",
+  "permissions": [
+    "clipboardWrite",
+    "storage",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://portal.azure.com/*",
+    "https://api.azrbac.mspim.azure.com/*"
+  ],
+  "action": {
+    "default_title": "Show header",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "manifest_version": 3
+}
