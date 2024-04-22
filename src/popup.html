@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
-  <head>
-    <script src="popup.js"></script>
-    <style>
+<head>
+  <script src="popup.js"></script>
+  <style>
     body #settings {
       display: inline-block;
       overflow: visible;
@@ -11,12 +11,15 @@
       background: white;
       white-space: nowrap;
     }
-    </style>
-  </head>
-  <body>
-    <h3>Azure Token</h3>
-    <input type="text" id="token">
-    <div id="date_acquired" style="font-size: 10pt"></div><br/>
-    <button id="copyButton">Copy to Clipboard</button>
-  </body>
+  </style>
+</head>
+<body>
+  <h3>Azure Token</h3>
+  <input type="text" id="token">
+  <div id="expires_in" style="font-size: 10pt">Expires in: <span id="minutes_remaining"></span></div><br/>
+  <input type="text" id="ticket" value="ticket">
+  <button id="saveButton">Download Token</button>
+  <br/><br/>
+  <button id="copyButton">Copy to Clipboard</button>
+</body>
 </html>
