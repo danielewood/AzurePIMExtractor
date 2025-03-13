@@ -11,15 +11,23 @@
       background: white;
       white-space: nowrap;
     }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h3>Azure Token</h3>
+  <h3><a id="azureTokenLink">Azure Token</a></h3>
   <input type="text" id="token">
   <div id="expires_in" style="font-size: 10pt">Expires in: <span id="minutes_remaining"></span></div><br/>
+  <button id="copyButton">Copy to Clipboard</button>
+  <br/><br/>
   <input type="text" id="ticket" value="ticket">
   <button id="saveButton">Download Token</button>
-  <br/><br/>
-  <button id="copyButton">Copy to Clipboard</button>
+  <br/>
 </body>
 </html>
